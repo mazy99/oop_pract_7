@@ -10,7 +10,6 @@ class Series:
     def __init__(self, x: float = 1.2, eps: float = 10 ** (-7)) -> None:
         self.x = x
         self.eps = eps
-        self.lock = None
 
     def _term(self, n: int) -> float:
         return ((-1) ** n) * (self.x**n) / (2 ** (n + 1))
