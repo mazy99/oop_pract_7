@@ -12,7 +12,7 @@ if __name__ == "__main__":
     print(series)
 
     start_time = time()
-    s_numeric = series.calculate(num_threads=1)
+    s_numeric = series.calculate(num_threads=4)
     end_time = time()
 
     s_exact = series.ex_value()
